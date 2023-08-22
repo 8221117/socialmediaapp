@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import About from "./About";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -11,18 +11,34 @@ import PostPage from "./PostPage";
 function App() {
   return (
     <div className="App">
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/newpost">Newpost</Link>
+          </li>
+        </ul>
+      </nav>
+
       <Routes>
-        <Route />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/newpost" element={<NewPost />} />
       </Routes>
 
-      <Header />
+      {/*   <Header />
       <Nav />
       <Missing />
       <PostPage />
       <NewPost />
       <About />
       <Home />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
