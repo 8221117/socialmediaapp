@@ -20,9 +20,9 @@ function App() {
           <li>
             <Link to="/about">About</Link>
           </li>
-          <li>
+          {/*   <li>
             <Link to="/newpost">Newpost</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/postpage">Postpage</Link>
           </li>
@@ -32,9 +32,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/newpost" element={<NewPost />} />
+        {/*  <Route path="/newpost" element={<NewPost />} /> */}
         <Route path="/postpage" element={<PostPage />} />
         <Route path="/postpage/:id" element={<Post />} />
+        <Route path="/postpage/newpost" element={<Post />} />
       </Routes>
 
       {/*   <Header />
