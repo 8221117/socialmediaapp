@@ -7,6 +7,7 @@ import Missing from "./Missing";
 import Nav from "./Nav";
 import NewPost from "./NewPost";
 import PostPage from "./PostPage";
+import Post from "./Post";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <li>
             <Link to="/newpost">Newpost</Link>
           </li>
+          <li>
+            <Link to="/postpage">Postpage</Link>
+          </li>
         </ul>
       </nav>
 
@@ -29,6 +33,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/newpost" element={<NewPost />} />
+        <Route path="/postpage" element={<PostPage />} />
+        <Route path="/postpage/:id" element={<Post />} />
       </Routes>
 
       {/*   <Header />
