@@ -8,6 +8,7 @@ import Nav from "./Nav";
 import NewPost from "./NewPost";
 import PostPage from "./PostPage";
 import Post from "./Post";
+import PostLayout from "./PostLayout";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         {/*  <Route path="/newpost" element={<NewPost />} /> */}
-        <Route path="/postpage">
+        <Route path="/postpage" element={<PostLayout />}>
           <Route index element={<PostPage />} />
           <Route path=":id" element={<Post />} />
           <Route path="newpost" element={<NewPost />} />
