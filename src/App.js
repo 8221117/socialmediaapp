@@ -9,8 +9,11 @@ import NewPost from "./NewPost";
 import PostPage from "./PostPage";
 import Post from "./Post";
 import PostLayout from "./PostLayout";
+import { useState } from "react";
 
 function App() {
+  const [search, setSearch] = useState("");
+
   return (
     <div className="App">
       {/* <nav>
@@ -43,7 +46,7 @@ function App() {
       </Routes> */}
 
       <Header title="Social Media APP" />
-      <Nav />
+      <Nav search={search} setSearch={setSearch} />
       <Missing />
       <PostPage />
       <NewPost />
