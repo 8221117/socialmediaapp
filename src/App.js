@@ -13,43 +13,43 @@ import PostLayout from "./PostLayout";
 function App() {
   return (
     <div className="App">
-      <nav>
+      {/* <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
-          </li>
-          {/*   <li>
+          </li> */}
+      {/*   <li>
             <Link to="/newpost">Newpost</Link>
           </li> */}
-          <li>
+      {/* <li>
             <Link to="/postpage">Postpage</Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
-      <Routes>
+      {/*  <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        {/*  <Route path="/newpost" element={<NewPost />} /> */}
-        <Route path="/postpage" element={<PostLayout />}>
+        <Route path="/about" element={<About />} /> */}
+      {/*  <Route path="/newpost" element={<NewPost />} /> */}
+      {/*   <Route path="/postpage" element={<PostLayout />}>
           <Route index element={<PostPage />} />
           <Route path=":id" element={<Post />} />
           <Route path="newpost" element={<NewPost />} />
           <Route path="*" element={<Missing />} />
         </Route>
-      </Routes>
+      </Routes> */}
 
-      {/*   <Header />
+      <Header title="Social Media APP" />
       <Nav />
       <Missing />
       <PostPage />
       <NewPost />
       <About />
       <Home />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
